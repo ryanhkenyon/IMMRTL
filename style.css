@@ -1,9 +1,11 @@
 body {
   color: white;
   background-color: black;
+  transition: 1s;
 }
 
 .nav {
+  color: whitesmoke;
   background-color: black;
   border-bottom: 2px solid;
   list-style: none;
@@ -28,9 +30,55 @@ body {
 
 .nav h2 {
   margin: auto;
+  padding-right: 70px;
 }
 
 /* NAVBAR END */
+
+/* SIDENAV START */
+
+#closeSide {
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: 1s;
+}
+
+#closeSide:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#sideNav {
+  color: whitesmoke;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  transition: 1s;
+  padding-top: 60px;
+}
+
+#sideNav ul li {
+  list-style: none;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+#sideNav ul li:hover {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* SIDENAV END */
 
 /* LANDING START */
 
@@ -38,12 +86,58 @@ body {
   background-color: rgb(44, 44, 44);
   display: flex;
   padding: 10px;
-  min-height: 750px;
+  height: 100%;
 }
 
 .landing img {
   margin: auto;
+  width: 40vw;
 }
+
+.landing p {
+  color: whitesmoke;
+  margin: auto;
+  width: 70vw;
+  text-align: center;
+}
+
+.border {
+  background-color: whitesmoke;
+}
+
+.content {
+  background-color: #111;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.row {
+  min-width: 300px;
+}
+
+.content h1 {
+  margin-top: 30px;
+}
+
+.content p {
+  width: 40vw;
+  margin: 30px auto;
+}
+
+.content img {
+  width: 30vw;
+  max-width: 500px;
+  margin: 50px;
+}
+
+/* @media (max-width: 767px) {
+   .row {
+    min-width: 500px;
+  }
+} */
+
+
 
 /* LANDING END */
 

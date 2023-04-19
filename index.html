@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="./scripts/insta.js" defer></script>
     <script
       src="https://kit.fontawesome.com/a766b15053.js"
       crossorigin="anonymous"
@@ -30,17 +31,89 @@
   <body>
     <nav>
       <ul class="nav">
-        <li><img src="./ico/ham.png" /></li>
-        
-          <h2>IMMRTL</h2> 
-        
+        <li><img id="sideNavBtn" src="./ico/ham.png" /></li>
+        <h2>IMMRTL</h2>
       </ul>
     </nav>
-    <div class="container-fluid landing">
-      <img src="./img/pic.png"/>
+
+    <div id="sideNav">
+      <a id="closeSide">x</a>
+      <ul>
+        <li>IMMRTL Battles</li>
+        <li>Art by OMBI</li>
+        <li>Contact</li>
+      </ul>
     </div>
+
+    <div class="container-fluid landing">
+      <img src="./img/immrtl.png" />
+    </div>
+
+    <div class="container-fluid landing">
+      <p>
+        We are a collective of individuals who are totally awesome and stuff. We
+        have battle, apparel, art, shit anything you can think of homie. We
+        really are the bees knees. Come check our shit out here on this site or
+        forever hold your peace, Meatwad. Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Accusamus eius modi distinctio magni quasi
+        quos velit qui, laudantium error voluptate minima earum eaque quidem
+        sequi laboriosam at vel ipsum nesciunt. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Dolorem aliquam officiis voluptatum iure,
+        numquam reiciendis temporibus harum soluta illo omnis hic, optio
+        aliquid, ipsa aperiam iste? Ipsam dolorum suscipit quod?
+      </p>
+    </div>
+
+    <div class="border"></div>
+
+    <div class="container-fluid content">
+      <div class="row">
+        <div class="col info">
+          <h1>Battles</h1>
+        </div>
+        <div class="col">
+          <p>
+            IMMRTL Battle league is hosted out of Pinellas County. We are an
+            open and diverse league committed to the production of high quality
+            battles. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsa doloribus, quasi nemo aliquam minus impedit earum. Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Quisquam, laudantium.
+            Quo facilis debitis laudantium sed rerum nostrum, voluptate
+            consectetur commodi nobis repellat eaque obcaecati odit recusandae
+            cum, tempora quasi atque.
+          </p>
+          <img src="./img/pic.png" alt="" />
+        </div>
+      </div>
+
+      <div class="container-fluid content">
+        <div class="row">
+          <div class="col info">
+            <img src="./img/pic.png" alt="" />
+          </div>
+          <div class="col">
+            <h1>Art</h1>
+            <p>
+              Founder of IMMRTL, OMBI is a talented artist that specializes in
+              streetpunk sketches. His work is equal parts impressive and
+              disturbing, bringing a twisted edge to canvas and computer alike.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A sequi
+              natus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium quisquam quo officia delectus rem non exercitationem
+              officiis autem ex explicabo? Quo iure voluptates velit blanditiis,
+              iste facere ab harum quam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border"></div>
+
     <div class="container-fluid footer">
+      <br />
       <h2>Follow us everywhere</h2>
+      <br />
       <div class="socials">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
@@ -48,9 +121,10 @@
         <a href="#" class="fa fa-instagram"></a>
         <a href="#" class="fa"><i class="fa-brands fa-tiktok"></i></a>
       </div>
+      <br />
       <p>Website designed by Ryan Kenyon</p>
       <p>&copy;IMMRTL 2023</p>
-      <br/>
+      <br />
     </div>
   </body>
 </html>
