@@ -131,6 +131,7 @@ body {
   border: 1px solid;
   padding: 30px;
   margin: 20px;
+  width: 40vw;
 }
 
 .content h1 {
@@ -139,11 +140,11 @@ body {
 
 .content p {
   margin: auto;
-  width: 35vw;
+  width: 40vw;
 }
 
 .content img {
-  width: 15vw;
+  width: 20vw;
   margin: 30px 0;
   box-shadow: 10px 10px 10px black;
   border-radius: 10%;
@@ -151,7 +152,7 @@ body {
 }
 
 .content img:hover {
-  width: 20vw;
+  width: 25vw;
 }
 
 .col a {
