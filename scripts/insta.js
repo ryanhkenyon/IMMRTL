@@ -1,16 +1,21 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'IGQVJXSk1RanNUc0wxTGtzTF8zTW15bUxBaVBBS1NlZAEh3N3ZAzYmtVbHpFaGlVY3ZAnZAzFnR05OUEJJT2t2Ukc3NEpaYUJBaXN0akVJM3pLdXNWRzdsNlJ1bFdsZAnhVelE0WGF6QV8wdExTR2tDUVZASawZDZD',
-		'X-RapidAPI-Host': 'instagram28.p.rapidapi.com'
-	}
-};
+// TODO FIGURE OUT HOW TO LIMIT API REQUESTS TO UNDER 10,000
+// ? ONE RESULT ONLY TO LIMIT QUOTA TILL I FIGURE IT OUT
+// *https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCgyu3ReOEELPLsV-U9cSt_A&maxResults=1&order=date&key=AIzaSyCbAG7ngnf0ORE5-n9IqI_-j-fAVxPhMKk
 
-fetch('https://instagram28.p.rapidapi.com/media_info_v2?short_code=CA_ifcxMjFR', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+// fetch(
+//   "https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCgyu3ReOEELPLsV-U9cSt_A&maxResults=10&order=date&key=AIzaSyCbAG7ngnf0ORE5-n9IqI_-j-fAVxPhMKk"
+// ).then((result)=>{
 
+// 	let data = result.json();
 
-    // INSTA ACCESS KEY ARKAYTHEGOD
-    // IGQVJXSk1RanNUc0wxTGtzTF8zTW15bUxBaVBBS1NlZAEh3N3ZAzYmtVbHpFaGlVY3ZAnZAzFnR05OUEJJT2t2Ukc3NEpaYUJBaXN0akVJM3pLdXNWRzdsNlJ1bFdsZAnhVelE0WGF6QV8wdExTR2tDUVZASawZDZD
+// 	let videos = data.items;
+
+// 	console.log(data)
+
+// 	let battlesDiv = document.getElementById('battles');
+// 	for (let video of videos) {
+// 		console.log(video.snippet.thumbnails.default.url)
+// 		battlesDiv.innerHTML += `<img src="${video.snippet.thumbnails.default.url}">`;
+// 	}
+
+// })

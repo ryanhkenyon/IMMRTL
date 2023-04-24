@@ -346,6 +346,95 @@ body {
 
 /* SHOP END */
 
+
+/* BATTLES START */
+
+.event {
+  border: solid 2px white;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.event img {
+  border: 2px solid black;
+  border-radius: 10%;
+  box-shadow: 5px 5px p5x black;
+  margin: 20px;
+  transition: 0.5s;
+  width: 90%;
+  height: 90%;
+  max-width: 600px;
+  max-height: 700px;
+  float: right;
+}
+
+.details {
+  text-align: left;
+  width: 30vw;
+  padding: 20px;
+}
+
+.details p {
+  text-align: left;
+  width: 30vw;
+  margin-left: 0px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  border: white 2px solid;
+  border-radius: 30px;
+  float: left;
+  margin: 30px auto 0;
+  padding: 30px;
+  text-align: center;
+  transition: 0.5s;
+  width: 200px;
+}
+
+.facebook:hover {
+  width: 250px;
+}
+
+@media (max-width: 1200px) {
+
+  .facebook {
+    float: none;
+  }
+
+
+  .event img {
+    float: none;
+    width: 45vw;
+    transition: none;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .details p {
+    text-align: center;
+    margin: auto;
+    width: 80vw;
+  }
+
+  .details ul {
+    list-style: square;
+    width: 40vw;
+    margin: auto;
+    padding: 30px;
+  }
+}
+
+iframe {
+  border-radius: 10%;
+}
+
+/* BATTLES END */
+
+
 /* FOOTER START */
 
 .footer {
