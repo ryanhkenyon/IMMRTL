@@ -5,8 +5,7 @@ document.getElementById("sideNavBtn").addEventListener("click", () => {
 });
 
 document.getElementById("closeSide").addEventListener("click", () => {
-  
-    setTimeout(() => {
+  setTimeout(() => {
     document.getElementById("sideNav").style.borderRight = "0";
   }, 900);
 
@@ -32,19 +31,20 @@ var resizeAll = function () {
       "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
   });
 };
-gallery.querySelectorAll("img").forEach(function (item) {
-  item.classList.add("byebye");
-  if (item.complete) {
-    console.log(item.src);
-  } else {
-    item.addEventListener("load", function () {
-      var altura = getVal(gallery, "grid-auto-rows");
-      var gap = getVal(gallery, "grid-row-gap");
-      var gitem = item.parentElement.parentElement;
-      gitem.style.gridRowEnd =
-        "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-      item.classList.remove("byebye");
-    });
-  }
-});
+
 window.addEventListener("resize", resizeAll);
+
+// CLICK IMAGES
+
+let items = document.getElementsByClassName("item");
+let exit = document.getElementsByClassName("exit")[0];
+
+for (let i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", () => {
+    if (items[i].classList.contains("full")) {
+      items[i].classList.remove("full");
+    } else {
+      items[i].classList.toggle("full");
+    }
+  });
+}
