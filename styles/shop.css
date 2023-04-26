@@ -1,26 +1,25 @@
-.shop h1 {
-    margin: auto;
-  }
-  
-  .product {
-    width: 80vw;
-    display: inline;
-    margin: auto;
-  }
-  
-  .shop img {
-    width: 30vw;
-    max-width: 250px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
-    transition: 0.7s;
-  }
-  
-  .products img:hover {
-    cursor: pointer;
-    opacity: 50%;
-    width: 40vw;
-    max-width: 300px;
-  }
-  
+.products h1 {
+  margin: auto;
+}
+
+.product {
+  width: 80vw;
+  display: inline;
+  margin: auto;
+}
+
+.products img {
+  width: 30vw;
+  max-width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  transition: 0.7s;
+}
+
+.products img:hover {
+  cursor: pointer;
+  opacity: 50%;
+  width: 40vw;
+  max-width: 300px;
+}

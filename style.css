@@ -135,8 +135,7 @@ body {
 
 /* CONTENT START */
 
-.content,
-.shop {
+.content {
   background: rgb(49, 49, 50);
   background: radial-gradient(
     circle,
@@ -151,10 +150,6 @@ body {
   transition: 0.5s;
 }
 
-#carouselExampleFade {
-  display: none;
-}
-
 .info {
   border: 1px solid;
   margin: 20px;
@@ -163,9 +158,6 @@ body {
 
 .bottom {
   margin-right: -4px;
-}
-
-.bottom a {
 }
 
 .content h1 {
@@ -177,35 +169,11 @@ body {
   width: 40vw;
 }
 
-.apparel img,
-.bottom img {
-  box-shadow: 10px 10px 10px black;
-  border-radius: 10%;
-  margin: 30px 0;
-  transition: 0.5s;
-}
-
-.apparel img {
-  width: 10vw;
-}
-
-.bottom img,
-#mainPic {
-  width: 15vw;
-}
-
-.bottom img:hover,
-#mainPic:hover,
-.sidePic:hover {
-  width: 20vw;
-}
-
 .landBtn {
   background-color: rgb(44, 44, 44);
   border: 1px solid white;
   border-radius: 10%;
   color: white;
-  margin: 30px;
   padding: 10px;
   text-decoration: none;
   transition: 0.5s;
@@ -214,58 +182,74 @@ body {
 .landBtn:hover {
   background-color: white;
   border: 5px solid black;
-  border-radius: 20%;
   color: black;
-  padding: 15px;
 }
 
-.youtube {
-  background-color: red;
-  border: white 2px solid;
-  border-radius: 30px;
-  margin: 30px auto 0;
-  padding: 30px;
+/* CAROUSEL START */
+
+.carousels {
+  display: flex;
+}
+
+.carousel {
   transition: 0.5s;
-  width: 200px;
 }
 
-.instagram {
-  border: 4px solid black;
+.left {
+  margin-left: 5vw;
+}
+
+.right {
+  margin-right: 5vw;
+}
+
+.apparel img,
+.bottom img {
+  box-shadow: 10px 10px 10px black;
+  border-radius: 10%;
+  margin: 30px 0;
+  transition: 0.5s;
+}
+
+.mainApparel {
+  width: 25vw;
+  margin: auto;
+}
+
+.sideApparel {
+  width: 20vw;
+  margin: auto;
+}
+
+.mainApparel:hover, .sideApparel {
+  cursor: pointer;
+}
+
+.mainApparel:hover {
+  width: 30vw;
+}
+
+.sideApparel:hover{
+  width: 25vw;
+}
+
+/* CAROUSEL END */
+
+.bottom img {
+  width: 30vw;
+}
+
+.instagram,
+.youtube {
   border-radius: 30px;
-  background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
   margin: auto;
   padding: 30px;
   transition: 0.5s;
   width: 200px;
-  text-decoration: none;
-  color: white;
 }
 
-.instagram a {
+.instagram a,
+.youtube a {
   text-decoration: none;
   color: white;
 }
@@ -276,7 +260,25 @@ body {
   width: 250px;
 }
 
-@media (max-width: 1060px) {
+.instagram {
+  border: 4px solid black;
+  background: #f09433;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.youtube {
+  background-color: red;
+  border: white 2px solid;
+}
+
+@media (max-width: 860px) {
   .landing p {
     margin: 30px auto;
   }
@@ -286,45 +288,22 @@ body {
   }
 
   .bottom img {
-    width: 30vw;
-  }
-
-  .bottom img:hover {
     width: 40vw;
   }
 }
 
 @media (max-width: 600px) {
-  .sidePic {
+  .hide {
     display: none;
   }
 
-  #mainPic {
-    display: none;
-  }
-
-  #carouselExampleFade {
-    display: block;
-    margin: auto;
-    transition: 0.5s;
+  .mainApparel {
     width: 40vw;
-  }
-
-  #carouselExampleFade:hover {
-    width: 55vw;
-  }
-
-  #mainPic:hover {
-    width: 50vw;
   }
 
   .landing,
   .content {
     font-size: 13px;
-  }
-
-  .col a {
-    font-size: 10px;
   }
 }
 
